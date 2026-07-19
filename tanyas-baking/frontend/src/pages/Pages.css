@@ -1,0 +1,196 @@
+.page-header {
+  background: url('/images/Our-cakes.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  padding: 56px 0;
+  text-align: center;
+}
+
+.page-header p {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--color-darkred);
+}
+
+.page-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.page-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.divider-heading-divider-line h1 {
+    font-size: 5px;
+}
+
+.btn-primary-red {
+  background: var(--color-darkred);
+  color: var(--color-white);
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.btn-primary-red:hover {
+  opacity: 0.9;
+}
+
+/* Classes promo card */
+.class-promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 1180px;
+  margin: 0 auto 64px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  height:440px;
+}
+
+.class-promo-image img,
+.class-promo-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.class-promo-body {
+  background: var(--color-olive);
+  color: var(--color-white);
+  padding: 32px 40px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:90%;
+}
+
+.class-promo-eyebrow {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.class-promo-body h2 {
+  color: var(--color-white);
+  font-size: 44px;
+  margin: 4px 0 16px;
+}
+
+.class-promo-body p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.class-promo-tags,
+.class-promo-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.80rem;
+}
+
+.tag-mustard { background: var(--color-mustard); color: #3a2a00; }
+.tag-pink { background: var(--color-flower-pink); color: var(--color-white); }
+.tag-olive { background: rgba(255, 255, 255, 0.15); color: var(--color-white); }
+
+.class-promo-price {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-mustard);
+  align-self: center;
+}
+
+.cake-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.cake-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.cake-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cake-card-body {
+  padding: 20px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid #e6d7cd;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.form-status.success { color: #2e7d32; }
+.form-status.error { color: #c62828; }
+
+.contact-info-card {
+  background: var(--color-pink-bg);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+@media (max-width: 860px) {
+  .cake-grid { grid-template-columns: 1fr 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .class-promo { grid-template-columns: 1fr; }
+  .class-promo-image img { min-height: 240px; }
+}
+
+@media (max-width: 560px) {
+  .cake-grid { grid-template-columns: 1fr; }
+}

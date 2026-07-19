@@ -1,0 +1,126 @@
+:root {
+  /* Colors sampled directly from tanyasbaking.com screenshots */
+  --color-green: #4c7a1e;         /* announcement bar */
+  --color-maroon: #a13564;        /* navbar */
+  --color-maroon-dark: #8a2a54;   /* navbar hover/active */
+  --color-darkred: #8b1a1a;       /* headings, links, accent text */
+  --color-pink-bg: #fbe0e6;       /* pastel pink section background */
+  --color-white: #ffffff;
+  --color-olive: #3f5b1e;         /* class promo accent */
+  --color-mustard: #f2c230;       /* class promo accent */
+  --color-flower-pink: #f06ba8;   /* class promo accent */
+  --color-grey-divider: #d9d9d9;
+  --color-text-body: #6b2e2e;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --shadow-soft: 0 10px 30px rgba(91, 58, 41, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-darkred);
+  margin: 0 0 0.5em 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+  color: var(--color-text-body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.btn-outline-white:hover {
+  background: var(--color-white);
+  color: var(--color-green);
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.divider-heading {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.divider-line {
+  height: 1px;
+  background: var(--color-grey-divider);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.divider-heading h1 {
+  font-size: 40px;
+  margin: 28px 0;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 44px 0; }
+  .section-title { font-size: 1.6rem; }
+  .divider-heading h1 { font-size: 36px; }
+}

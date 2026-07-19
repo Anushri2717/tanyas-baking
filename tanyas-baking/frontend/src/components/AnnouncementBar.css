@@ -1,0 +1,25 @@
+.announcement-bar {
+  background: var(--color-green);
+  color: var(--color-white);
+  padding: 8px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.announcement-text {
+  font-size: 9px;
+  letter-spacing: 0.01em;
+}
+
+.announcement-bar .btn {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .announcement-text { font-size: 11px; }
+}
