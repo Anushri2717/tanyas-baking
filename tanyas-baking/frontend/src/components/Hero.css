@@ -101,7 +101,7 @@
 .carousel-btn-left { left: 14px; }
 .carousel-btn-right { right: 74px; }
 
-@media (max-width: 860px) {
+@media (max-width: 480px) {
   .hero-intro-inner {
     grid-template-columns: 1fr;
   }

@@ -109,7 +109,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 480px) {
   .footer-info {
     grid-template-columns: 1fr 1fr;
   }

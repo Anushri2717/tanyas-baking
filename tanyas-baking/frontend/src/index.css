@@ -119,7 +119,7 @@ button {
   margin: 28px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .section { padding: 44px 0; }
   .section-title { font-size: 1.6rem; }
   .divider-heading h1 { font-size: 36px; }

@@ -184,7 +184,7 @@
   padding: 28px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 480px) {
   .cake-grid { grid-template-columns: 1fr 1fr; }
   .contact-layout { grid-template-columns: 1fr; }
   .class-promo { grid-template-columns: 1fr; }
@@ -194,3 +194,4 @@
 @media (max-width: 560px) {
   .cake-grid { grid-template-columns: 1fr; }
 }
+

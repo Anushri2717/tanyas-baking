@@ -115,7 +115,7 @@
   color: var(--color-white);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 600px) {
   .navbar-links {
     position: absolute;
     top: 100%;
