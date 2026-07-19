@@ -101,6 +101,47 @@
 .carousel-btn-left { left: 14px; }
 .carousel-btn-right { right: 74px; }
 
+.hero-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.hero-cta-row .btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 38px !important;
+  min-width: 110px !important;
+  padding: 0 16px !important;
+  border-radius: 999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  text-decoration: none;
+}
+
+.btn.btn-outline {
+  border: 2px solid var(--color-darkred);
+  color: var(--color-darkred);
+  background: transparent;
+}
+
+.btn.btn-outline:hover {
+  background: var(--color-darkred);
+  color: var(--color-white);
+}
+.hero-trust {
+  font-size: 15px;
+  color: var(--color-darkred);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
 @media (max-width: 480px) {
   .hero-intro-inner {
     grid-template-columns: 1fr;
