@@ -1,25 +1,79 @@
 .announcement-bar {
-  background: var(--color-green);
+  position: relative;
+  background: var(--color-darkred);
   color: var(--color-white);
-  padding: 8px 22px;
+  padding: 7px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
   flex-wrap: wrap;
   text-align: center;
+  border-bottom: 1px solid rgba(242, 194, 48, 0.5);
+  animation: announcementFadeIn 0.6s ease;
+}
+
+@keyframes announcementFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.announcement-icon {
+  font-size: 15px;
 }
 
 .announcement-text {
-  font-size: 9px;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.announcement-bar .btn {
-  font-size: 10px;
-  padding: 5px 10px;
+.announcement-text em {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-mustard);
 }
 
-@media (max-width: 600px) {
-  .announcement-text { font-size: 11px; }
+.announcement-btn {
+  display: inline-block;
+  background: var(--color-mustard);
+  border: none;
+  color: #3a2a00;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: opacity 0.25s ease, transform 0.2s ease;
+}
+
+.announcement-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.announcement-close {
+  position: absolute;
+  right: 16px;
+  top: 30%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.55;
+  padding: 4px;
+}
+
+.announcement-close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 100px) {
+  .announcement-text { font-size: 10px; }
+  .announcement-bar { padding: 10px 10px; }
 }

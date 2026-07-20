@@ -85,6 +85,14 @@ button {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
+.btn, .cake-card, .feature-card {
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><text y="20" font-size="20">🧁</text></svg>') 14 14, pointer;
+}
+
 .btn-outline-white {
   background: transparent;
   color: var(--color-white);
@@ -108,7 +116,7 @@ button {
 
 .divider-heading {
   text-align: center;
-  padding: 15px 0;
+  padding: 15px 4px;
 }
 
 .divider-line {

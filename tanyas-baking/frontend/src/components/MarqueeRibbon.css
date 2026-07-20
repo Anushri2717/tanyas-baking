@@ -1,0 +1,29 @@
+.marquee-ribbon {
+  background: var(--color-darkred);
+  overflow: hidden;
+  padding: 6px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 22s linear infinite;
+}   
+
+.marquee-item {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  padding: 0 16px;
+}
+
+.marquee-dot {
+  color: var(--color-mustard);
+  margin-left: 16px;
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

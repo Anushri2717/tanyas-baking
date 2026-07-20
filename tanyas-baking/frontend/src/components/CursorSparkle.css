@@ -1,0 +1,23 @@
+.cursor-sparkle-wrap {
+  position: relative;
+}
+
+.cursor-sparkle {
+  position: absolute;
+  font-size: 16px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: sparkleFloat 0.9s ease-out forwards;
+  z-index: 5;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--drift)), -50%) translateY(-50px) scale(0.4);
+  }
+}

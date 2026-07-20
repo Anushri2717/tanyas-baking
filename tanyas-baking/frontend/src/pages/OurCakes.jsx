@@ -31,6 +31,15 @@ export default function OurCakes() {
         <h1>Our Cakes</h1>
         <p>Explore our cake collections, crafted for every occasion.</p>
       </header>
+      <ScrollReveal direction="up">
+  <p className="cake-grid-intro">Pick a category to see designs, flavors, and pricing.</p>
+</ScrollReveal>
+
+<ScrollReveal direction="zoom" delay={0.2}>
+  <div className="cake-grid">
+    ...
+  </div>
+</ScrollReveal>
 
       <section className="section container">
         <p className="cake-grid-intro">Pick a category to see designs, flavors, and pricing.</p>

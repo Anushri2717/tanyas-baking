@@ -188,7 +188,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 0;
   max-width: 1180px;
-  margin: 0 auto 64px;
+  margin: -16px auto 64px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-soft);

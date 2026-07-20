@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassesVideoBanner from '../components/ClassesVideoBanner.jsx';
+import ScrollReveal from '../components/ScrollReveal.jsx';
 import './Pages.css';
 
 const BANNER_IMG =
@@ -19,38 +20,40 @@ export default function Classes() {
         <div className="divider-line" />
       </div>
 
-      <section className="class-promo">
-        <div className="class-promo-image">
-          <video
-              src="/videos/baking-class.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-          />
-        </div>
-        <div className="class-promo-body">
-          <p className="class-promo-eyebrow">Advance</p>
-          <h2>Baking Class</h2>
-          <p>How to make your own cake &amp; certified course.</p>
-          <div className="class-promo-tags">
-            <span className="tag tag-mustard">Cake &amp; Certified Course</span>
-            <span className="tag tag-pink">Only</span>
+      <ScrollReveal direction="left">
+        <section className="class-promo">
+          <div className="class-promo-image">
+            <video
+                src="/videos/baking-class.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+            />
           </div>
-          <div className="class-promo-meta">
-            <span className="tag tag-olive">📍 Madambakkam</span>
-            <span className="class-promo-price">₹15,000</span>
+          <div className="class-promo-body">
+            <p className="class-promo-eyebrow">Advance</p>
+            <h2>Baking Class</h2>
+            <p>How to make your own cake &amp; certified course.</p>
+            <div className="class-promo-tags">
+              <span className="tag tag-mustard">Cake &amp; Certified Course</span>
+              <span className="tag tag-pink">Only</span>
+            </div>
+            <div className="class-promo-meta">
+              <span className="tag tag-olive">📍 Madambakkam</span>
+              <span className="class-promo-price">₹15,000</span>
+            </div>
+            <a
+              href="https://wa.me/919677276248?text=Hi%20Tanya!%20I%20want%20to%20know%20more%20about%20the%20baking%20classes"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary-red"
+            >
+              Enquire on WhatsApp
+            </a>
           </div>
-          <a
-            href="https://wa.me/919677276248?text=Hi%20Tanya!%20I%20want%20to%20know%20more%20about%20the%20baking%20classes"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary-red"
-          >
-            Enquire on WhatsApp
-          </a>
-        </div>
-      </section>
+        </section>
+      </ScrollReveal>
     </>
   );
 }
